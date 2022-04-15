@@ -1,0 +1,203 @@
+/* contact page styling */
+.contact-left {
+    background: url(../../images/yellow-bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 3rem 2.5rem;
+}
+
+.message-from-title {
+    font-family: Poppins-Medium;
+    font-size: 27px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.message-from-text {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.message-from-text span {
+    font-family: Poppins-Bold;
+}
+
+.contact-right {
+    background: url(../../images/contactus.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.lets-talk-section {
+    background: url(../../images/map.svg) top right no-repeat;
+    background-size: contain;
+    height: 100%;
+    padding: 5rem 0 2rem;
+}
+
+.lets-talk-title {
+    font-family: Poppins-Light;
+    font-size: 40px;
+    color: #151E30;
+    letter-spacing: 0;
+    line-height: 50px;
+}
+
+.lets-talk-title span {
+    font-family: Poppins-Medium;
+}
+
+.lets-talk-text {
+    font-family: Poppins-Regular;
+    font-size: 22px;
+    color: #151E30;
+    letter-spacing: 0;
+}
+
+.mail-us-at {
+    background: rgba(46, 204, 113, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 75%;
+    margin-top: 2rem;
+}
+
+.mail-us {
+    background: rgba(46, 204, 113, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+    width: 61px;
+}
+
+.mailus {
+    font-family: Poppins-Medium;
+    font-size: 17px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.mailus2 {
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    color: #2ECC71;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.mailus2:hover {
+    text-decoration: none;
+    color: #2ECC71;
+}
+
+.office-address {
+    font-family: Poppins-Light;
+    font-size: 20px;
+    color: #151E30;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.office-address span {
+    font-family: Poppins-SemiBold;
+}
+
+.office-address2 {
+    font-family: Poppins-Medium;
+    font-size: 14px;
+    color: #838383;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+.office-address2:hover {
+    text-decoration: none;
+    color: #FECD30;
+}
+
+.send-message {
+    background: #FFFFFF;
+    border: 1px solid #FA9F00;
+    padding: 2rem 2rem 1rem;
+}
+
+.contact-form-text {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #151E30;
+    letter-spacing: 0;
+}
+
+.contact-input {
+    border: 1px solid rgba(190, 190, 190, 0.1);
+    background: rgba(190, 190, 190, 0.1);
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #CBCBCB;
+    letter-spacing: 0;
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-input2 {
+    border: 1px solid rgba(190, 190, 190, 0.1);
+    background: rgba(190, 190, 190, 0.1);
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #CBCBCB;
+    letter-spacing: 0;
+    resize: none;
+    height: 131px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-btn {
+    background: #2ECC71;
+    font-family: Poppins-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.map {
+    margin: 4rem 0 8rem;
+}
+
+.swal-footer {
+    text-align: center !important;
+}
+
+.swal-button {
+    background-color: #F7B500 !important;
+    color: #000000 !important;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+    .message-from-title {
+        font-size: 20px;
+    }
+
+    .our-products-title {
+        font-size: 32px;
+    }
+
+    .lets-talk-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}

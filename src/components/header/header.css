@@ -1,0 +1,28 @@
+.logo {
+    width: 190px;
+}
+
+.nav-link {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.getintouch-btn {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    background: #2ECC71;
+    border: 1px solid #2ECC71;
+    padding: 0.5rem 1.5rem;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+    .navbar-brand img {
+        width: 140px;
+    }
+}
