@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './header.css'
-import logo from '../../images/dexter-logo.svg'
+import logo from '../../../images/dexter-logo.svg'
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import {
     Link,

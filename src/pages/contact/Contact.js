@@ -1,8 +1,8 @@
 import React from 'react'
 import './contact.css'
 import { Col, Container, Row, Carousel } from 'react-bootstrap'
-import Footer from '../../components/footer/Footer'
-import Header from '../../components/header/Header'
+import Footer from '../../shared/components/footer/Footer'
+import Header from '../../shared/components/Navigation/Header'
 import signature from '../../images/signature.svg'
 import email from '../../images/icons/email.svg'
 import email2 from '../../images/icons/email2.svg'
@@ -44,39 +44,20 @@ const Contact = () => {
                     </div>
                     <Row className=" g-0">
                         <Col md={4} >
-                            <div className="contact-left">
-                                <Carousel controls='false'>
-                                    <Carousel.Item>
-                                        <div className="">
-                                            <p className="message-from-title">Message from the
-                                                CXO</p>
-                                            <p className="message-from-text"><span>Promise</span><br />
-                                                Since dexter's inception in 2021, dexter and the force have kept evolving in positive ways - learning new skills, developing new ideas, and adapting to change. One year after, we are proud of the dexter journey to deliver lasting value through digital product, and we are optimistic about the future with you.
-                                            </p>
-                                            <img src={signature} width="120px" className="d-block" alt="signature" />
-                                        </div>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <div className="">
-                                            <p className="message-from-title">Message from the
-                                                CXO</p>
-                                            <p className="message-from-text"><span>Service</span><br />
-                                                Our customers are the core reason dexter is desirous to leverage the boundless powers of technology, and design thinking to create meaningful digital solutions that solve everyday problems for you.
-                                            </p>
-                                            <img src={signature} width="120px" className="d-block" alt="signature" />
-                                        </div>
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <div className="">
-                                            <p className="message-from-title">Message from the
-                                                CXO</p>
-                                            <p className="message-from-text"><span>Quality Experience</span><br />
-                                                Here at dexter, we think of ourselves as your partner, focused on value creation, but more importantly, your experience, because for us, creating the best experience for you is an exciting priority.
-                                            </p>
-                                            <img src={signature} width="120px" className="d-block" alt="signature" />
-                                        </div>
-                                    </Carousel.Item>
-                                </Carousel>
+                            <div class="contact-left">
+                                <div class="contact-info-slide">
+                                    <div class="">
+                                        <p class="message-from-title">Message from the
+                                            CEO</p>
+                                        <p class="message-from-text"><span>Promise and Quality Experience</span><br />
+                                            Since dexter's inception in 2021, dexter and the force have kept evolving in positive ways - learning new skills, developing new ideas, and adapting to change. One year after, we are proud of the dexter journey to deliver lasting value through digital product, and we are optimistic about the future with you.
+                                        </p>
+                                        <p class="message-from-text">
+                                            Here at dexter, we think of ourselves as your partner, focused on value creation, but more importantly, your experience, because for us, creating the best experience for you is an exciting priority.
+                                        </p>
+                                    </div>
+                                    <img src={signature} width="120px" className="d-block" alt="signature" />
+                                </div>
                             </div>
                         </Col>
                         <Col md={8} >

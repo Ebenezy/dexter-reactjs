@@ -60,17 +60,22 @@ a:focus {
 }
 
 .hero-section {
-  background: url(../images/hero-bg.svg) right bottom no-repeat;
+  background: url(../images/yellow-bg.svg) right bottom no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-attachment: fixed;
-    background-size: contain; */
+  background-size: 900px;
 }
 
 .hero-inner {
-  padding-top: 4rem;
+  padding-top: 2.5rem 0;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .hero-title {
@@ -88,11 +93,44 @@ a:focus {
   letter-spacing: 0;
 }
 
+.hero-subtitle2 {
+  font-family: Poppins-Bold;
+  font-size: 38px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
 .hero-text {
   font-family: Poppins-Regular;
   font-size: 14px;
   color: #707070;
   text-align: left;
+}
+
+.hero-text2 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  color: #707070;
+  text-align: left;
+}
+
+.more_btn {
+  background: #FFCB00;
+  width: 165px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 1rem;
+  cursor: pointer;
+  font-family: Poppins-Medium;
+  font-size: 17px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+#more {
+  display: none;
 }
 
 .read-more {
@@ -169,8 +207,6 @@ a:focus {
 }
 
 .hvr-icon-wobble-horizontal {
-  display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
@@ -227,12 +263,20 @@ a:focus {
   margin-bottom: 0;
 }
 
+.landing-hero-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   transform: rotate(0deg);
+  width: 90%;
 }
 
 .floating:hover {
@@ -255,6 +299,83 @@ a:focus {
   }
 }
 
+.floating1 {
+  width: 220px;
+  animation-name: floating1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 0;
+  margin-top: 5px;
+  transform: rotate(-10deg);
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes floating1 {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.floating2 {
+  width: 220px;
+  animation-name: floating2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  margin-left: -40px;
+  margin-top: 5px;
+}
+
+@keyframes floating2 {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 20px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.brands img {
+  filter: grayscale(100%);
+  cursor: pointer;
+  opacity: 0.9;
+  margin: 10px 7px;
+}
+
+.brands img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 .hero-cc {
   font-family: Poppins-Regular;
   font-size: 15px;
@@ -267,7 +388,7 @@ a:focus {
 
 @media (min-width: 240px) and (max-width: 767px) {
   .hero-section {
-    height: 100%;
+    background: none;
   }
 
   #first {
@@ -282,8 +403,27 @@ a:focus {
     width: 35px;
   }
 
+  .floating1,
+  .floating2 {
+    width: 160px;
+    margin-bottom: 2rem;
+  }
+
   .hero-title {
-    font-size: 37px;
+    font-size: 30px;
+  }
+
+  .hero-subtitle2 {
+    font-size: 25px;
+  }
+
+  .landing-hero-img {
+    display: none;
+    margin-bottom: 2rem;
+  }
+
+  .brands {
+    justify-content: start;
   }
 
   .dexter-ngn-title {
@@ -349,6 +489,111 @@ a:focus {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-section {
+    /* height: 100%; */
+    background: none;
+  }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+  .navbar-brand img {
+    width: 140px;
+  }
+
+  #first {
+    order: 2;
+  }
+
+  #second {
+    order: 1;
+  }
+
+  .app-icon {
+    width: 35px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-subtitle2 {
+    font-size: 25px;
+  }
+
+
+  .landing-hero-img {
+    display: none;
+    margin-bottom: 2rem;
+  }
+
+  .brands {
+    justify-content: start;
+  }
+
+  .footer2 {
+    justify-content: center;
+  }
+
+  .dexter-logo2 {
+    width: 120px;
+  }
+
+  .aboutus-title {
+    font-size: 32px;
+  }
+
+  .aboutus-text {
+    font-size: 15px;
+  }
+
+  .build-with-us-text {
+    font-size: 25px;
+  }
+
+  .our-products-title {
+    font-size: 32px;
+  }
+
+  .lets-talk-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .product1 {
+    height: auto;
+  }
+
+  .product2 {
+    height: 418px;
+  }
+
+  .product-title,
+  .arriving-soon2 {
+    font-size: 25px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .mail-us-at {
+    width: 100%;
+  }
+
+  .message-from-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .hero-subtitle2 {
+    font-size: 28px;
+  }
+
+  .brands {
+    justify-content: start;
+  }
+}
